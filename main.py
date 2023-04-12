@@ -1,6 +1,7 @@
+from sklearn.model_selection import train_test_split
 from load_data import load_data
-from model import model
-from visualize import *
+from model import *
+from visualize_data import *
 
 if __name__ == '__main__':
     data, targets = load_data()

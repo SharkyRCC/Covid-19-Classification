@@ -17,13 +17,13 @@ def load_images(path, urls, target):
     return images, labels
 
 def load_covid_data():
-    covid_path = "data/COVID-19_Radiography_Dataset/COVID/images"
+    covid_path = "data/COVID/images/"
     covid_urls = os.listdir(covid_path)
     covid_images, covid_targets = load_images(covid_path, covid_urls, 1)
     return covid_images, covid_targets
 
 def load_normal_data():
-    normal_path = "data/COVID-19_Radiography_Dataset/Normal/images"
+    normal_path = "data/Normal/images/"
     normal_urls = os.listdir(normal_path)
     normal_images, normal_targets = load_images(normal_path, normal_urls, 0)
     return normal_images, normal_targets

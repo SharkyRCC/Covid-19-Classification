@@ -1,7 +1,9 @@
 import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from load_data import load_data
+from sklearn.model_selection import train_test_split
+
 
 data, targets = load_data()
 x_train, x_test, y_train, y_test = train_test_split(data, targets, test_size=0.2)
